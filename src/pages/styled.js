@@ -8,17 +8,8 @@ const HomeContainer = styled.div`
   align-items: center;
   flex-direction: column;
 
-  .react-multi-carousel-list li {
-    width: 300px!important;
-    margin-right: 12px;
-  }
-
   .items {
     cursor: grab;
-  }
-
-  .items img {
-    border-radius: 8px
   }
 
   .header .right div:not(:last-child) {
@@ -29,14 +20,26 @@ const HomeContainer = styled.div`
     user-select: none;
   }
 
-  @media only screen and (max-width: 420px){
+  @media only screen and (max-width: 564px){
+    .footer>div {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .footer .logo {
+      margin-bottom: 24px
+    }
+  }
+
+  @media only screen and (max-width: 464px){
     .items {
       margin-top: 1rem;
     }
 
     .title {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
     }
 
     .title p {
@@ -45,18 +48,27 @@ const HomeContainer = styled.div`
     }
 
     .header .right div:not(:last-child) {
-      margin-right: 14px;
+      margin-right: 20px;
     }
 
     .react-multi-carousel-item img {
-      width: 294px!important;
+      width: 100%!important;
+    }
+
+    .footer .footer-menu {
+      flex-direction: column;
+      align-items: center;
     }
   }
 
   @media only screen and (max-width: 321px){
     .header .right div,
     .header .right button {
-      font-size: 14px
+      font-size: 12px
+    }
+
+    .header .right div:not(:last-child) {
+      margin-right: 16px;
     }
 
     .title p {

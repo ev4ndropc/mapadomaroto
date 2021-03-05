@@ -1,4 +1,3 @@
-import cheerio from 'cheerio'
 const BASEURL = process.env.NEXT_PUBLIC_THEMOVIEDB_API_URL
 const KEY = process.env.THEMOVIEDB_API_KEY
 
